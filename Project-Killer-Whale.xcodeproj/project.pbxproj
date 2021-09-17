@@ -83,7 +83,7 @@
 		59D94CDE26F48E3100E040CC /* Util */ = {
 			isa = PBXGroup;
 			children = (
-				59D94CE726F499FD00E040CC /* MapViewExtension.swift */,
+				59D94CEB26F49CEA00E040CC /* Extensions */,
 				59D94CE926F49BF000E040CC /* Constants.swift */,
 			);
 			path = Util;
@@ -119,6 +119,14 @@
 				59D94CE326F4918700E040CC /* HomeViewController.swift */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		59D94CEB26F49CEA00E040CC /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				59D94CE726F499FD00E040CC /* MapViewExtension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
