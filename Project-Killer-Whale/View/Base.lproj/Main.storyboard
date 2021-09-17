@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ett-er-K7x">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="ipad9_7" orientation="portrait" layout="fullscreen" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
@@ -14,14 +14,14 @@
             <objects>
                 <viewController id="m0O-Nr-XFE" customClass="HomeViewController" customModule="Project_Killer_Whale" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="h5c-Fw-25N">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="goZ-aO-VCd">
-                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <rect key="frame" x="0.0" y="50" width="768" height="974"/>
                             </mapView>
-                            <searchBar contentMode="redraw" searchBarStyle="minimal" placeholder="Escribel el nombre de una playa..." translatesAutoresizingMaskIntoConstraints="NO" id="M48-eb-9QG">
-                                <rect key="frame" x="0.0" y="88" width="414" height="51"/>
+                            <searchBar contentMode="redraw" searchBarStyle="minimal" placeholder="Escribe el nombre de una playa..." translatesAutoresizingMaskIntoConstraints="NO" id="M48-eb-9QG">
+                                <rect key="frame" x="200" y="50" width="722" height="51"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="searchField.backgroundColor">
@@ -34,9 +34,13 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="XvV-yT-xUt" firstAttribute="bottom" secondItem="goZ-aO-VCd" secondAttribute="bottom" id="EAg-sv-XlR"/>
-                            <constraint firstAttribute="trailing" secondItem="M48-eb-9QG" secondAttribute="trailing" id="GOX-7a-KIn"/>
+                            <constraint firstAttribute="trailing" secondItem="M48-eb-9QG" secondAttribute="trailing" id="GOX-7a-KIn">
+                                <variation key="heightClass=regular-widthClass=regular" constant="200"/>
+                            </constraint>
                             <constraint firstItem="M48-eb-9QG" firstAttribute="top" secondItem="XvV-yT-xUt" secondAttribute="top" id="IqV-E5-Uzj"/>
-                            <constraint firstItem="M48-eb-9QG" firstAttribute="leading" secondItem="XvV-yT-xUt" secondAttribute="leading" id="cGE-kX-dIW"/>
+                            <constraint firstItem="M48-eb-9QG" firstAttribute="leading" secondItem="XvV-yT-xUt" secondAttribute="leading" id="cGE-kX-dIW">
+                                <variation key="heightClass=regular-widthClass=regular" constant="200"/>
+                            </constraint>
                             <constraint firstItem="goZ-aO-VCd" firstAttribute="leading" secondItem="XvV-yT-xUt" secondAttribute="leading" id="jRB-vG-GSa"/>
                             <constraint firstItem="goZ-aO-VCd" firstAttribute="top" secondItem="XvV-yT-xUt" secondAttribute="top" id="mxn-0A-bKF"/>
                             <constraint firstItem="XvV-yT-xUt" firstAttribute="trailing" secondItem="goZ-aO-VCd" secondAttribute="trailing" id="u4c-fF-Xic"/>
@@ -58,7 +62,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ett-er-K7x" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="VUz-qr-cC7">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="50"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
