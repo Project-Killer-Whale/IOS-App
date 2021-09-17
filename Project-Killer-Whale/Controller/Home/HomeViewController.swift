@@ -79,7 +79,7 @@ extension HomeViewController: CLLocationManagerDelegate{
         let coordinate = CLLocationCoordinate2D(latitude: location.coordinate.latitude, longitude: location.coordinate.longitude)
         
         //Create a span (Zoom)
-        let span = MKCoordinateSpan(latitudeDelta: 0.1, longitudeDelta: 0.1)
+        let span = MKCoordinateSpan(latitudeDelta: Constants.Map.latitudeDelta, longitudeDelta: Constants.Map.longitudeDelta)
         
         //Create a region with coordinates and span
         let region = MKCoordinateRegion(center: coordinate, span: span)

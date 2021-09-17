@@ -14,6 +14,7 @@
 		59D94CD626F48E1D00E040CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59D94CD426F48E1D00E040CC /* LaunchScreen.storyboard */; };
 		59D94CE426F4918700E040CC /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D94CE326F4918700E040CC /* HomeViewController.swift */; };
 		59D94CE826F499FD00E040CC /* MapViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D94CE726F499FD00E040CC /* MapViewExtension.swift */; };
+		59D94CEA26F49BF000E040CC /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D94CE926F49BF000E040CC /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		59D94CD726F48E1D00E040CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		59D94CE326F4918700E040CC /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		59D94CE726F499FD00E040CC /* MapViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewExtension.swift; sourceTree = "<group>"; };
+		59D94CE926F49BF000E040CC /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				59D94CE726F499FD00E040CC /* MapViewExtension.swift */,
+				59D94CE926F49BF000E040CC /* Constants.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -188,6 +191,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				59D94CEA26F49BF000E040CC /* Constants.swift in Sources */,
 				59D94CCA26F48E1C00E040CC /* AppDelegate.swift in Sources */,
 				59D94CCC26F48E1C00E040CC /* SceneDelegate.swift in Sources */,
 				59D94CE426F4918700E040CC /* HomeViewController.swift in Sources */,
