@@ -9,6 +9,10 @@ import Foundation
 
 struct Constants{
     
+    struct App {
+        static let appName: String = "Project Killer Whale"
+    }
+    
     struct Map {
         //Default zoom for the map
         static let latitudeDelta: Double = 1

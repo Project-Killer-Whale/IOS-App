@@ -9,10 +9,9 @@ import UIKit
 import MapKit
 
 final class HomeViewController: UIViewController {
-
+    
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var mapView: MKMapView!
-    
     private var locationManager: CLLocationManager?
     
     override func viewDidLoad() {
