@@ -12,6 +12,7 @@
 		59D94CD126F48E1C00E040CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59D94CCF26F48E1C00E040CC /* Main.storyboard */; };
 		59D94CD326F48E1D00E040CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59D94CD226F48E1D00E040CC /* Assets.xcassets */; };
 		59D94CD626F48E1D00E040CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59D94CD426F48E1D00E040CC /* LaunchScreen.storyboard */; };
+		59D94CE426F4918700E040CC /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D94CE326F4918700E040CC /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		59D94CD226F48E1D00E040CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		59D94CD526F48E1D00E040CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		59D94CD726F48E1D00E040CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		59D94CE326F4918700E040CC /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,8 +102,17 @@
 		59D94CE126F48E4000E040CC /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				59D94CE226F4917400E040CC /* Home */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		59D94CE226F4917400E040CC /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				59D94CE326F4918700E040CC /* HomeViewController.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -176,6 +187,7 @@
 			files = (
 				59D94CCA26F48E1C00E040CC /* AppDelegate.swift in Sources */,
 				59D94CCC26F48E1C00E040CC /* SceneDelegate.swift in Sources */,
+				59D94CE426F4918700E040CC /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
