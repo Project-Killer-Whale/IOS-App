@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		5932D7B726F7429A00FC7F72 /* NetworkProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5932D7B626F7429A00FC7F72 /* NetworkProvider.swift */; };
 		596EA5FF26F7B59B00645453 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 596EA5FE26F7B59B00645453 /* Alamofire */; };
+		5974AA6F26F7C0B1007F9ABE /* BeachResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5974AA6E26F7C0B1007F9ABE /* BeachResponse.swift */; };
+		5974AA7126F7CA6A007F9ABE /* Beach.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5974AA7026F7CA6A007F9ABE /* Beach.swift */; };
 		59D94CCA26F48E1C00E040CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D94CC926F48E1C00E040CC /* AppDelegate.swift */; };
 		59D94CCC26F48E1C00E040CC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D94CCB26F48E1C00E040CC /* SceneDelegate.swift */; };
 		59D94CD126F48E1C00E040CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59D94CCF26F48E1C00E040CC /* Main.storyboard */; };
@@ -21,6 +23,8 @@
 
 /* Begin PBXFileReference section */
 		5932D7B626F7429A00FC7F72 /* NetworkProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkProvider.swift; sourceTree = "<group>"; };
+		5974AA6E26F7C0B1007F9ABE /* BeachResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeachResponse.swift; sourceTree = "<group>"; };
+		5974AA7026F7CA6A007F9ABE /* Beach.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Beach.swift; sourceTree = "<group>"; };
 		59D94CC626F48E1C00E040CC /* Project-Killer-Whale.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Project-Killer-Whale.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		59D94CC926F48E1C00E040CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		59D94CCB26F48E1C00E040CC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -48,6 +52,8 @@
 		5932D7B326F740CB00FC7F72 /* Entitities */ = {
 			isa = PBXGroup;
 			children = (
+				596EA60526F7BE8400645453 /* Structs */,
+				596EA60426F7BE7E00645453 /* Objects */,
 			);
 			path = Entitities;
 			sourceTree = "<group>";
@@ -65,6 +71,22 @@
 				5932D7B626F7429A00FC7F72 /* NetworkProvider.swift */,
 			);
 			path = Networking;
+			sourceTree = "<group>";
+		};
+		596EA60426F7BE7E00645453 /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				5974AA7026F7CA6A007F9ABE /* Beach.swift */,
+			);
+			path = Objects;
+			sourceTree = "<group>";
+		};
+		596EA60526F7BE8400645453 /* Structs */ = {
+			isa = PBXGroup;
+			children = (
+				5974AA6E26F7C0B1007F9ABE /* BeachResponse.swift */,
+			);
+			path = Structs;
 			sourceTree = "<group>";
 		};
 		59D94CBD26F48E1C00E040CC = {
@@ -235,10 +257,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				59D94CEA26F49BF000E040CC /* Constants.swift in Sources */,
+				5974AA7126F7CA6A007F9ABE /* Beach.swift in Sources */,
 				59D94CCA26F48E1C00E040CC /* AppDelegate.swift in Sources */,
 				59D94CCC26F48E1C00E040CC /* SceneDelegate.swift in Sources */,
 				59D94CE426F4918700E040CC /* HomeViewController.swift in Sources */,
 				59D94CE826F499FD00E040CC /* MapViewExtension.swift in Sources */,
+				5974AA6F26F7C0B1007F9ABE /* BeachResponse.swift in Sources */,
 				5932D7B726F7429A00FC7F72 /* NetworkProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

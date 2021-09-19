@@ -12,8 +12,19 @@ class NetworkProvider {
     
     static let shared = NetworkProvider()
     
-    private func httpRequest(url: String, method: HTTPMethod) -> String{
-        AF.request(url, method: method).validate(statusCode: Constants.Network.okStatus)
-        return "HTTP_Request"
+    public func httpRequest(url: String, method: HTTPMethod){
+        
+        AF.request(url, method: method).validate(statusCode: Constants.Network.okStatus).responseDecodable(of: BeachResponse.self){
+            response in
+            
+         
+            if let beachResponse = response.value{
+                print(beachResponse.features?[0].geometry?.x)
+                    
+            } else{
+                print(response.error)
+            }
+            
+        }
     }
 }
