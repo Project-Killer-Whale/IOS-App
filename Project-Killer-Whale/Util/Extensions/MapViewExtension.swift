@@ -10,9 +10,15 @@ import MapKit
 
 extension MKMapView{
     
-    func setPointAnnotation(coordinate: CLLocationCoordinate2D){
+    func setPointAnnotation(coordinate: CLLocationCoordinate2D, name: String?, description: String?){
         let annotation = MKPointAnnotation()
+        
         annotation.coordinate = coordinate
+        
+        if let name = name{
+            annotation.title = name
+        }
+        
         self.addAnnotation(annotation)
     }
     

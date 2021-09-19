@@ -12,18 +12,24 @@ final class HomeViewController: UIViewController {
     
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var mapView: MKMapView!
+    
     private var locationManager: CLLocationManager?
+    private var beaches: [BeachResponse] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let coordinate = CLLocationCoordinate2D(latitude: 42.0006, longitude: -5.756)
-        let coordinate2 = CLLocationCoordinate2D(latitude: 42.0006, longitude: -6.756)
-        mapView.setPointAnnotation(coordinate: coordinate)
-        mapView.setPointAnnotation(coordinate: coordinate2)
-        
         for i in Constants.Network.numberOfBeaches{
-            NetworkProvider.shared.httpRequest(url: Constants.Network.beachInfo(id: i), method: .get)
+            NetworkProvider.shared.httpRequest(url: Constants.Network.beachInfo(id: i), method: .get) { beachResponse in
+           
+                self.beaches.append(beachResponse)
+                self.mapView.setPointAnnotation(coordinate: CLLocationCoordinate2D(latitude: (beachResponse.features?[0].geometry?.y)!, longitude: (beachResponse.features?[0].geometry?.x!)!), name: beachResponse.features?[0].attributes?.Nombre!, description: nil)
+                
+            } failure: { error in
+                
+                print(error.debugDescription)
+                
+            }
         }
         
         

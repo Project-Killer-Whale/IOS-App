@@ -15,8 +15,8 @@ struct Constants{
     
     struct Map {
         //Default zoom for the map
-        static let latitudeDelta: Double = 1
-        static let longitudeDelta: Double = 1
+        static let latitudeDelta: Double = 10
+        static let longitudeDelta: Double = 10
     }
     
     struct Network {

@@ -12,18 +12,16 @@ class NetworkProvider {
     
     static let shared = NetworkProvider()
     
-    public func httpRequest(url: String, method: HTTPMethod){
+    public func httpRequest(url: String, method: HTTPMethod, success: @escaping (_ beachResponse: BeachResponse) -> (), failure: @escaping (_ error: Error?) -> ()){
         
         AF.request(url, method: method).validate(statusCode: Constants.Network.okStatus).responseDecodable(of: BeachResponse.self){
             response in
             
          
             if let beachResponse = response.value{
-                if let id = beachResponse.features?[0].attributes?.OBJECTID{
-                    print("El id es: \(id) y el nombre es \(beachResponse.features?[0].attributes?.Nombre!)")
-                }                    
+                 success(beachResponse)
             } else{
-                print(response.error)
+                failure(response.error)
             }
             
         }
