@@ -24,10 +24,11 @@ final class HomeViewController: UIViewController {
            
                 self.beaches.append(beachResponse)
                 self.mapView.setPointAnnotation(coordinate: CLLocationCoordinate2D(latitude: (beachResponse.features?[0].geometry?.y)!, longitude: (beachResponse.features?[0].geometry?.x!)!), name: beachResponse.features?[0].attributes?.Nombre!, description: nil)
-                
+                print(self.beaches.count)
             } failure: { error in
                 
                 print(error.debugDescription)
+                print(self.beaches.count)
                 
             }
         }

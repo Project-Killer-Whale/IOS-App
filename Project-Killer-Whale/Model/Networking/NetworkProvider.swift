@@ -11,10 +11,12 @@ import Alamofire
 class NetworkProvider {
     
     static let shared = NetworkProvider()
+    let manager = Alamofire.Session.default
     
     public func httpRequest(url: String, method: HTTPMethod, success: @escaping (_ beachResponse: BeachResponse) -> (), failure: @escaping (_ error: Error?) -> ()){
+        manager.session.configuration.timeoutIntervalForRequest = 180
         
-        AF.request(url, method: method).validate(statusCode: Constants.Network.okStatus).responseDecodable(of: BeachResponse.self){
+        manager.request(url, method: method).validate(statusCode: Constants.Network.okStatus).responseDecodable(of: BeachResponse.self){
             response in
             
          
