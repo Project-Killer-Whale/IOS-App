@@ -18,4 +18,10 @@ struct Constants{
         static let latitudeDelta: Double = 1
         static let longitudeDelta: Double = 1
     }
+    
+    struct URL {
+        static func beachInfo(id: Int) -> String{
+            return "https://services1.arcgis.com/nCKYwcSONQTkPA4K/arcgis/rest/services/Playas_2015/FeatureServer/0/query?where=OBJECTID%20%3D%20\(id)&outFields=*&outSR=4326&f=json"
+        }
+    }
 }
