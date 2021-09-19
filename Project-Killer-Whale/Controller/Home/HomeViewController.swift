@@ -22,7 +22,10 @@ final class HomeViewController: UIViewController {
         mapView.setPointAnnotation(coordinate: coordinate)
         mapView.setPointAnnotation(coordinate: coordinate2)
         
-        NetworkProvider.shared.httpRequest(url: Constants.Network.beachInfo(id: 623), method: .get)
+        for i in Constants.Network.numberOfBeaches{
+            NetworkProvider.shared.httpRequest(url: Constants.Network.beachInfo(id: i), method: .get)
+        }
+        
         
     }
     

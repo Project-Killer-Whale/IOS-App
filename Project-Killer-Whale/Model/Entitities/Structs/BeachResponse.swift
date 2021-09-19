@@ -92,8 +92,8 @@ struct Attributes: Decodable{
     let Submarinis: String?
     let Zona_Surf: String?
     let Observacio: String?
-    let Coordenada: Int?
-    let Coordena_1: Int?
+    let Coordenada: Double?
+    let Coordena_1: Double?
     let Huso: String?
     let Coordena_2: String?
     let Coordena_3: String?

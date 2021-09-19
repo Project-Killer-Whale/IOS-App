@@ -19,8 +19,9 @@ class NetworkProvider {
             
          
             if let beachResponse = response.value{
-                print(beachResponse.features?[0].geometry?.x)
-                    
+                if let id = beachResponse.features?[0].attributes?.OBJECTID{
+                    print("El id es: \(id) y el nombre es \(beachResponse.features?[0].attributes?.Nombre!)")
+                }                    
             } else{
                 print(response.error)
             }
