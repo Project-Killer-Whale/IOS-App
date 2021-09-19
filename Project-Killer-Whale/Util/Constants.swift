@@ -19,7 +19,9 @@ struct Constants{
         static let longitudeDelta: Double = 1
     }
     
-    struct URL {
+    struct Network {
+        static let okStatus = 200...299
+        
         static func beachInfo(id: Int) -> String{
             return "https://services1.arcgis.com/nCKYwcSONQTkPA4K/arcgis/rest/services/Playas_2015/FeatureServer/0/query?where=OBJECTID%20%3D%20\(id)&outFields=*&outSR=4326&f=json"
         }
